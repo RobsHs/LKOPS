@@ -16,9 +16,21 @@
     </nav>
   </header>
 
-  <div class="kartu-profil">
-    <p>Profil Siswa</p>
-  </div>
+  <main>
+    <section>
+      <div class="kartu-profil">
+        <p>Profil Siswa</p>
+      </div>
+    </section>
+
+    <section>
+      <article>
+        <div id="kotak-pesan">
+          <p id="pesanStatus">Sedang Memuat...</p>
+        </div>
+      </article>
+    </section>
+  </main>
 
   <footer>
     <p>&copy; 2026 Tim Praktikum</p>
@@ -28,6 +40,10 @@
     const judul = document.getElementById("judulUtama");
     if (judul) {
       judul.textContent = "Selamat Datang Siswa";
+    }
+    const pesan = document.getElementById("pesanStatus");
+    if (pesan) {
+      pesan.textContent = "Data Berhasil Disimpan";
     }
   </script>
 
